@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "home": "首頁",
+    "projects": "專案",
+    "contact": "聯絡我",
+    "todos": "待辦事項",
+    "chat": "聊天"
+  },
+  "header": {
+    "title": "鄭學謙",
+    "role": "資訊工程系學生",
+    "education": {
+      "title": "學歷",
+      "university": "台灣科技大學資工系（2020-至今）",
+      "highSchool": "大安高級工業職業學校資訊科（2017-2020）"
+    },
+    "skills": {
+      "title": "技能"
+    }
+  },
+  "projects": {
+    "title": "我的專案",
+    "viewDemo": "查看展示",
+    "viewCode": "查看程式碼"
+  },
+  "contact": {
+    "title": "聯絡方式",
+    "description": "歡迎透過以下方式與我聯繫"
+  }
+} 
