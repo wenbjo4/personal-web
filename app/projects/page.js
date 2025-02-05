@@ -3,7 +3,7 @@ import ProjectCard from '../../components/ProjectCard';
 
 const projects = [
   {
-    image: "/images/unity-game.jpg",
+    image: "/images/project1.jpg",
     title: "3D Adventure Game",
     description: "A 3D adventure game built with Unity featuring dynamic combat and puzzle elements",
     tags: [
@@ -14,7 +14,7 @@ const projects = [
     codeLink: "#"
   },
   {
-    image: "/images/web-app.jpg",
+    image: "/images/project2.jpg",
     title: "Task Management System",
     description: "A full-stack web application for managing tasks and projects with real-time updates",
     tags: [
@@ -27,7 +27,7 @@ const projects = [
     codeText: "GitHub"
   },
   {
-    image: "/images/mobile-app.jpg",
+    image: "/images/project3.jpg",
     title: "Fitness Tracker App",
     description: "A cross-platform mobile app for tracking workouts and monitoring fitness progress",
     tags: [
@@ -84,7 +84,7 @@ export default function Projects() {
     <div className="min-h-screen flex flex-col items-center justify-center gap-8 py-12">
       <Navigation />
 
-      <main className="container mx-auto px-4 pt-24">
+      <main className="w-full max-w-5xl px-4">
         <h1 className="text-3xl font-bold mb-8">My Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (

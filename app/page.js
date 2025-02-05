@@ -1,4 +1,47 @@
 import Image from "next/image";
+import ProjectCard from '../components/ProjectCard';
+
+const featuredProjects = [
+  {
+    image: "/images/unity-game.jpg",
+    title: "3D Adventure Game",
+    description: "A 3D adventure game built with Unity featuring dynamic combat and puzzle elements",
+    tags: [
+      { name: "Unity", color: "text-purple-600", bgColor: "bg-purple-100" },
+      { name: "C#", color: "text-blue-600", bgColor: "bg-blue-100" }
+    ],
+    demoLink: "https://github.com/wenbjo4",
+    codeLink: "https://github.com/wenbjo4",
+    demoText: "Play Demo",
+    codeText: "View Code"
+  },
+  {
+    image: "/images/web-app.jpg",
+    title: "Personal Portfolio",
+    description: "A modern portfolio website built with Next.js and Tailwind CSS, featuring responsive design and dark mode",
+    tags: [
+      { name: "Next.js", color: "text-black", bgColor: "bg-gray-100" },
+      { name: "Tailwind", color: "text-sky-600", bgColor: "bg-sky-100" }
+    ],
+    demoLink: "https://github.com/wenbjo4",
+    codeLink: "https://github.com/wenbjo4",
+    demoText: "Visit Site",
+    codeText: "GitHub"
+  },
+  {
+    image: "/images/ai-project.jpg",
+    title: "AI Chat Assistant",
+    description: "An AI-powered chat application using OpenAI's GPT model, supporting multiple languages and creative writing",
+    tags: [
+      { name: "OpenAI", color: "text-green-600", bgColor: "bg-green-100" },
+      { name: "React", color: "text-blue-600", bgColor: "bg-blue-100" }
+    ],
+    demoLink: "https://github.com/wenbjo4",
+    codeLink: "https://github.com/wenbjo4",
+    demoText: "Try Demo",
+    codeText: "Source"
+  }
+];
 
 export default function Home() {
   return (
@@ -43,71 +86,9 @@ export default function Home() {
 
       <section className="w-full max-w-5xl px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Project 1 */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="relative h-48">
-              <Image
-                src="/images/project1.jpg"
-                alt="Project 1"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="p-4">
-              <span className="text-sm text-blue-600 bg-blue-100 px-2 py-1 rounded">Web Development</span>
-              <h4 className="font-semibold text-lg mt-2">Project 1</h4>
-              <p className="text-gray-600 mt-2">A brief description of project 1</p>
-              <div className="mt-4 flex gap-2">
-                <a href="#" className="text-blue-600 hover:underline">Demo</a>
-                <a href="#" className="text-blue-600 hover:underline">Code</a>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 2 */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="relative h-48">
-              <Image
-                src="/images/project2.jpg"
-                alt="Project 2"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="p-4">
-              <span className="text-sm text-green-600 bg-green-100 px-2 py-1 rounded">Mobile Apps</span>
-              <h4 className="font-semibold text-lg mt-2">Project 2</h4>
-              <p className="text-gray-600 mt-2">A brief description of project 2</p>
-              <div className="mt-4 flex gap-2">
-                <a href="#" className="text-blue-600 hover:underline">Demo</a>
-                <a href="#" className="text-blue-600 hover:underline">Code</a>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 3 */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="relative h-48">
-              <Image
-                src="/images/project3.jpg"
-                alt="Project 3"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="p-4">
-              <span className="text-sm text-purple-600 bg-purple-100 px-2 py-1 rounded">Unity</span>
-              <h4 className="font-semibold text-lg mt-2">Project 3</h4>
-              <p className="text-gray-600 mt-2">A brief description of project 3</p>
-              <div className="mt-4 flex gap-2">
-                <a href="#" className="text-blue-600 hover:underline">Demo</a>
-                <a href="#" className="text-blue-600 hover:underline">Code</a>
-              </div>
-            </div>
-          </div>
+          {featuredProjects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
         </div>
       </section>
 
