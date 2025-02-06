@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 忽略 Project Structure 相關的 PowerShell 腳本與文本檔案
+update_structure.bat
+_project_structure/generate_structure.ps1
+_project_structure/structure.txt
