@@ -36,7 +36,7 @@
       "codeLink": "#"
     },
     {
-      "image": "/images/ai-project.jpg",
+      "image": "https://picsum.photos/400/400",
       "title": "圖像識別AI",
       "description": "一個能夠高精度識別和分類圖像中物體的AI模型",
       "tags": [
@@ -47,7 +47,7 @@
       "codeLink": "#"
     },
     {
-      "image": "/images/embedded.jpg",
+      "image": "https://picsum.photos/400/400",
       "title": "智慧家居系統",
       "description": "基於物聯網的智慧家居系統，用於自動控制燈光、溫度和安全",
       "tags": [
@@ -58,7 +58,7 @@
       "codeLink": "#"
     },
     {
-      "image": "/images/game-2d.jpg",
+      "image": "https://picsum.photos/400/400",
       "title": "2D平台遊戲",
       "description": "一個基於瀏覽器的2D平台遊戲，具有多個關卡和能力提升",
       "tags": [
@@ -67,41 +67,6 @@
       ],
       "demoLink": "#",
       "codeLink": "#"
-    }
-  ],
-  "featuredProjects": [
-    {
-      "image": "/images/unity-game.jpg",
-      "title": "3D冒險遊戲",
-      "description": "使用Unity開發的3D冒險遊戲，具有動態戰鬥和解謎元素",
-      "tags": [
-        { "name": "Unity", "color": "text-purple-600", "bgColor": "bg-purple-100" },
-        { "name": "C#", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "https://github.com/wenbjo4",
-      "codeLink": "https://github.com/wenbjo4"
-    },
-    {
-      "image": "/images/web-app.jpg",
-      "title": "個人作品集",
-      "description": "使用Next.js和Tailwind CSS建構的現代作品集網站，具有響應式設計和深色模式",
-      "tags": [
-        { "name": "Next.js", "color": "text-black", "bgColor": "bg-gray-100" },
-        { "name": "Tailwind", "color": "text-sky-600", "bgColor": "bg-sky-100" }
-      ],
-      "demoLink": "https://github.com/wenbjo4",
-      "codeLink": "https://github.com/wenbjo4"
-    },
-    {
-      "image": "/images/ai-project.jpg",
-      "title": "AI聊天助手",
-      "description": "使用OpenAI的GPT模型開發的AI聊天應用，支援多語言和創意寫作",
-      "tags": [
-        { "name": "OpenAI", "color": "text-green-600", "bgColor": "bg-green-100" },
-        { "name": "React", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "https://github.com/wenbjo4",
-      "codeLink": "https://github.com/wenbjo4"
     }
   ]
 } 

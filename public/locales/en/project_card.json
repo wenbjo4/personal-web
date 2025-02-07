@@ -36,7 +36,7 @@
       "codeLink": "#"
     },
     {
-      "image": "/images/ai-project.jpg",
+      "image": "https://picsum.photos/400/400",
       "title": "Image Recognition AI",
       "description": "An AI model that can recognize and classify objects in images with high accuracy",
       "tags": [
@@ -47,7 +47,7 @@
       "codeLink": "#"
     },
     {
-      "image": "/images/embedded.jpg",
+      "image": "https://picsum.photos/400/400",
       "title": "Smart Home System",
       "description": "An IoT-based smart home system for automated control of lights, temperature, and security",
       "tags": [
@@ -58,7 +58,7 @@
       "codeLink": "#"
     },
     {
-      "image": "/images/game-2d.jpg",
+      "image": "https://picsum.photos/400/400",
       "title": "2D Platform Game",
       "description": "A browser-based 2D platform game with multiple levels and power-ups",
       "tags": [
@@ -67,41 +67,6 @@
       ],
       "demoLink": "#",
       "codeLink": "#"
-    }
-  ],
-  "featuredProjects": [
-    {
-      "image": "/images/unity-game.jpg",
-      "title": "3D Adventure Game",
-      "description": "A 3D adventure game built with Unity featuring dynamic combat and puzzle elements",
-      "tags": [
-        { "name": "Unity", "color": "text-purple-600", "bgColor": "bg-purple-100" },
-        { "name": "C#", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "https://github.com/wenbjo4",
-      "codeLink": "https://github.com/wenbjo4"
-    },
-    {
-      "image": "/images/web-app.jpg",
-      "title": "Personal Portfolio",
-      "description": "A modern portfolio website built with Next.js and Tailwind CSS, featuring responsive design and dark mode",
-      "tags": [
-        { "name": "Next.js", "color": "text-black", "bgColor": "bg-gray-100" },
-        { "name": "Tailwind", "color": "text-sky-600", "bgColor": "bg-sky-100" }
-      ],
-      "demoLink": "https://github.com/wenbjo4",
-      "codeLink": "https://github.com/wenbjo4"
-    },
-    {
-      "image": "/images/ai-project.jpg",
-      "title": "AI Chat Assistant",
-      "description": "An AI-powered chat application using OpenAI's GPT model, supporting multiple languages and creative writing",
-      "tags": [
-        { "name": "OpenAI", "color": "text-green-600", "bgColor": "bg-green-100" },
-        { "name": "React", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "https://github.com/wenbjo4",
-      "codeLink": "https://github.com/wenbjo4"
     }
   ]
 } 

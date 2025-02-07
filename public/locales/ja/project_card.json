@@ -36,7 +36,7 @@
       "codeLink": "#"
     },
     {
-      "image": "/images/ai-project.jpg",
+      "image": "https://picsum.photos/400/400",
       "title": "画像認識AI",
       "description": "画像内のオブジェクトを高精度で認識・分類できるAIモデル",
       "tags": [
@@ -47,7 +47,7 @@
       "codeLink": "#"
     },
     {
-      "image": "/images/embedded.jpg",
+      "image": "https://picsum.photos/400/400",
       "title": "スマートホームシステム",
       "description": "IoTベースのスマートホームシステム。照明、温度、セキュリティの自動制御が可能",
       "tags": [
@@ -58,7 +58,7 @@
       "codeLink": "#"
     },
     {
-      "image": "/images/game-2d.jpg",
+      "image": "https://picsum.photos/400/400",
       "title": "2Dプラットフォームゲーム",
       "description": "ブラウザベースの2Dプラットフォームゲーム。複数のレベルとパワーアップ機能を搭載",
       "tags": [
@@ -67,41 +67,6 @@
       ],
       "demoLink": "#",
       "codeLink": "#"
-    }
-  ],
-  "featuredProjects": [
-    {
-      "image": "/images/unity-game.jpg",
-      "title": "3Dアドベンチャーゲーム",
-      "description": "Unityで開発した3Dアドベンチャーゲーム。ダイナミックな戦闘とパズル要素を特徴とします",
-      "tags": [
-        { "name": "Unity", "color": "text-purple-600", "bgColor": "bg-purple-100" },
-        { "name": "C#", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "https://github.com/wenbjo4",
-      "codeLink": "https://github.com/wenbjo4"
-    },
-    {
-      "image": "/images/web-app.jpg",
-      "title": "ポートフォリオサイト",
-      "description": "Next.jsとTailwind CSSで構築したモダンなポートフォリオサイト。レスポンシブデザインとダークモードを実装",
-      "tags": [
-        { "name": "Next.js", "color": "text-black", "bgColor": "bg-gray-100" },
-        { "name": "Tailwind", "color": "text-sky-600", "bgColor": "bg-sky-100" }
-      ],
-      "demoLink": "https://github.com/wenbjo4",
-      "codeLink": "https://github.com/wenbjo4"
-    },
-    {
-      "image": "/images/ai-project.jpg",
-      "title": "AIチャットアシスタント",
-      "description": "OpenAIのGPTモデルを使用したAIチャットアプリ。多言語対応と創造的な文章生成をサポート",
-      "tags": [
-        { "name": "OpenAI", "color": "text-green-600", "bgColor": "bg-green-100" },
-        { "name": "React", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "https://github.com/wenbjo4",
-      "codeLink": "https://github.com/wenbjo4"
     }
   ]
 }

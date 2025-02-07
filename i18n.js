@@ -1,6 +1,7 @@
 'use client'; // 若在 Next.js App Directory 下，有使用 client side 功能需加
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 // 這裡可以把多個 namespace (page) 拆分，
 // 例如 common.json, projects.json, header.json ...
@@ -13,50 +14,44 @@ import jaNav from './public/locales/ja/nav.json';
 import enProjectCard from './public/locales/en/project_card.json';
 import zhProjectCard from './public/locales/zh/project_card.json';
 import jaProjectCard from './public/locales/ja/project_card.json';
-import enProject from './public/locales/en/project.json';
-import zhProject from './public/locales/zh/project.json';
-import jaProject from './public/locales/ja/project.json';
+import enProjectPage from './public/locales/en/project_page.json';
+import zhProjectPage from './public/locales/zh/project_page.json';
+import jaProjectPage from './public/locales/ja/project_page.json';
 
 i18n
   .use(initReactI18next)
+  .use(LanguageDetector)
   .init({
     resources: {
       zh: {
         home: zhHome,
         nav: zhNav,
-        projectCard: zhProjectCard,
-        project: zhProject,
+        project_card: zhProjectCard,
+        project_page: zhProjectPage,
       },
       ja: {
         home: jaHome,
         nav: jaNav,
-        projectCard: jaProjectCard,
-        project: jaProject,
+        project_card: jaProjectCard,
+        project_page: jaProjectPage,
       },
       en: {
         home: enHome,
         nav: enNav,
-        projectCard: enProjectCard,
-        project: enProject,
+        project_card: enProjectCard,
+        project_page: enProjectPage,
       },
     },
     // 預設語系
-    lng: 'zh',
-    fallbackLng: {
-      'ja-JP': ['ja'],
-      'en-US': ['en'],
-      'zh-TW': ['zh'],
-      'default': ['zh']
-    },
-    // 預設 namespace
-    ns: ['home', 'nav', 'project', 'projectCard'],
+    fallbackLng: 'zh',
+    ns: ['home', 'nav', 'project_card', 'project_page'],
     defaultNS: 'home',
     interpolation: {
       escapeValue: false,
     },
+
     detection: {
       order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
     },
   });
 

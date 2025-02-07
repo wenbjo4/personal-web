@@ -1,109 +1,75 @@
 'use client';
-
+import { useTranslation } from 'react-i18next';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { useTranslation } from 'react-i18next';
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-
-// Initialize i18next
-i18n
-  .use(initReactI18next)
-  .use(LanguageDetector)
-  .init({
-    resources: {
-      en: {
-        translation: {
-          nav: {
-            home: "Home",
-            projects: "Projects",
-            contact: "Contact",
-            todos: "Todos",
-            chat: "Chat"
-          },
-          logo: "Profilo"
-        }
-      },
-      zh: {
-        translation: {
-          nav: {
-            home: "首頁",
-            projects: "專案",
-            contact: "聯絡我",
-            todos: "待辦事項",
-            chat: "聊天"
-          },
-          logo: "簡介"
-        }
-      }
-    },
-    fallbackLng: 'en',
-    interpolation: {
-      escapeValue: false,
-    },
-    detection: {
-      order: ['localStorage', 'navigator'],
-    }
-  });
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
   
+  const languages = [
+    { code: 'zh', label: '中' },
+    { code: 'en', label: 'EN' },
+    { code: 'ja', label: '日' }
+  ];
+
   return (
     <div className="flex items-center gap-2">
-      <button
-        onClick={() => i18n.changeLanguage('zh')}
-        className={`px-2 py-1 rounded transition-colors ${
-          i18n.language === 'zh' ? 'bg-blue-500 text-white' : 'text-gray-300 hover:text-white'
-        }`}
-      >
-        中
-      </button>
-      <span className="text-gray-500">|</span>
-      <button
-        onClick={() => i18n.changeLanguage('en')}
-        className={`px-2 py-1 rounded transition-colors ${
-          i18n.language === 'en' ? 'bg-blue-500 text-white' : 'text-gray-300 hover:text-white'
-        }`}
-      >
-        EN
-      </button>
+      {languages.map((lang, index) => (
+        <div key={lang.code} className="flex items-center">
+          <button
+            onClick={() => i18n.changeLanguage(lang.code)}
+            aria-label={`Switch to ${lang.code}`}
+            className={`px-2 py-1 rounded transition-colors ${
+              i18n.language.startsWith(lang.code)
+                ? 'bg-blue-500 text-white' 
+                : 'text-gray-300 hover:text-white hover:bg-blue-400'
+            }`}
+          >
+            {lang.label}
+          </button>
+          {index < languages.length - 1 && (
+            <span className="text-gray-500 mx-1" aria-hidden="true">|</span>
+          )}
+        </div>
+      ))}
     </div>
   );
 }
 
 export default function Navigation() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('nav');
+  const pathname = usePathname();
+
+  const navLinks = [
+    { href: '/', label: t('home') },
+    { href: '/project_page', label: t('project_page') },
+    { href: '/contact', label: t('contact') }
+  ];
 
   return (
     <nav className="bg-gray-900 text-white fixed top-0 left-0 right-0 z-[123] shadow-lg">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* Logo 偏左 */}
+          {/* Logo */}
           <div className="flex-shrink-0 mr-auto">
             <Link href="/" className="text-xl font-bold">
               {t('logo')}
             </Link>
           </div>
 
-          {/* Navigation Links 仍在右侧 */}
+          {/* Navigation Links */}
           <div className="flex items-center gap-6">
-            <Link href="/" className="hover:text-blue-400 transition-colors">
-              {t('nav.home')}
-            </Link>
-            <Link href="/projects" className="hover:text-blue-400 transition-colors">
-              {t('nav.projects')}
-            </Link>
-            <Link href="/todos" className="hover:text-blue-400 transition-colors">
-              {t('nav.todos')}
-            </Link>
-            <Link href="/chat-room" className="hover:text-blue-400 transition-colors">
-              {t('nav.chat')}
-            </Link>
-            <Link href="/contact" className="hover:text-blue-400 transition-colors">
-              {t('nav.contact')}
-            </Link>
+            {navLinks.map(({ href, label }) => (
+              <Link 
+                key={href}
+                href={href}
+                className={`hover:text-blue-400 transition-colors ${
+                  pathname === href ? 'text-blue-400' : ''
+                }`}
+              >
+                {label}
+              </Link>
+            ))}
             <LanguageSwitcher />
           </div>
         </div>
