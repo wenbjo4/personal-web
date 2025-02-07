@@ -1,0 +1,107 @@
+{
+  "viewDemo": "View Demo",
+  "viewCode": "View Code",
+  "projects": [
+    {
+      "image": "/images/project1.jpg",
+      "title": "3D Adventure Game",
+      "description": "A 3D adventure game built with Unity featuring dynamic combat and puzzle elements",
+      "tags": [
+        { "name": "Unity", "color": "text-purple-600", "bgColor": "bg-purple-100" },
+        { "name": "C#", "color": "text-blue-600", "bgColor": "bg-blue-100" }
+      ],
+      "demoLink": "#",
+      "codeLink": "#"
+    },
+    {
+      "image": "/images/project2.jpg",
+      "title": "Task Management System",
+      "description": "A full-stack web application for managing tasks and projects with real-time updates",
+      "tags": [
+        { "name": "React", "color": "text-green-600", "bgColor": "bg-green-100" },
+        { "name": "Node.js", "color": "text-yellow-600", "bgColor": "bg-yellow-100" }
+      ],
+      "demoLink": "#",
+      "codeLink": "#"
+    },
+    {
+      "image": "/images/project3.jpg",
+      "title": "Fitness Tracker App",
+      "description": "A cross-platform mobile app for tracking workouts and monitoring fitness progress",
+      "tags": [
+        { "name": "Flutter", "color": "text-orange-600", "bgColor": "bg-orange-100" },
+        { "name": "Firebase", "color": "text-blue-600", "bgColor": "bg-blue-100" }
+      ],
+      "demoLink": "#",
+      "codeLink": "#"
+    },
+    {
+      "image": "/images/ai-project.jpg",
+      "title": "Image Recognition AI",
+      "description": "An AI model that can recognize and classify objects in images with high accuracy",
+      "tags": [
+        { "name": "Python", "color": "text-red-600", "bgColor": "bg-red-100" },
+        { "name": "TensorFlow", "color": "text-green-600", "bgColor": "bg-green-100" }
+      ],
+      "demoLink": "#",
+      "codeLink": "#"
+    },
+    {
+      "image": "/images/embedded.jpg",
+      "title": "Smart Home System",
+      "description": "An IoT-based smart home system for automated control of lights, temperature, and security",
+      "tags": [
+        { "name": "C++", "color": "text-gray-600", "bgColor": "bg-gray-100" },
+        { "name": "Arduino", "color": "text-purple-600", "bgColor": "bg-purple-100" }
+      ],
+      "demoLink": "#",
+      "codeLink": "#"
+    },
+    {
+      "image": "/images/game-2d.jpg",
+      "title": "2D Platform Game",
+      "description": "A browser-based 2D platform game with multiple levels and power-ups",
+      "tags": [
+        { "name": "JavaScript", "color": "text-yellow-600", "bgColor": "bg-yellow-100" },
+        { "name": "Phaser.js", "color": "text-blue-600", "bgColor": "bg-blue-100" }
+      ],
+      "demoLink": "#",
+      "codeLink": "#"
+    }
+  ],
+  "featuredProjects": [
+    {
+      "image": "/images/unity-game.jpg",
+      "title": "3D Adventure Game",
+      "description": "A 3D adventure game built with Unity featuring dynamic combat and puzzle elements",
+      "tags": [
+        { "name": "Unity", "color": "text-purple-600", "bgColor": "bg-purple-100" },
+        { "name": "C#", "color": "text-blue-600", "bgColor": "bg-blue-100" }
+      ],
+      "demoLink": "https://github.com/wenbjo4",
+      "codeLink": "https://github.com/wenbjo4"
+    },
+    {
+      "image": "/images/web-app.jpg",
+      "title": "Personal Portfolio",
+      "description": "A modern portfolio website built with Next.js and Tailwind CSS, featuring responsive design and dark mode",
+      "tags": [
+        { "name": "Next.js", "color": "text-black", "bgColor": "bg-gray-100" },
+        { "name": "Tailwind", "color": "text-sky-600", "bgColor": "bg-sky-100" }
+      ],
+      "demoLink": "https://github.com/wenbjo4",
+      "codeLink": "https://github.com/wenbjo4"
+    },
+    {
+      "image": "/images/ai-project.jpg",
+      "title": "AI Chat Assistant",
+      "description": "An AI-powered chat application using OpenAI's GPT model, supporting multiple languages and creative writing",
+      "tags": [
+        { "name": "OpenAI", "color": "text-green-600", "bgColor": "bg-green-100" },
+        { "name": "React", "color": "text-blue-600", "bgColor": "bg-blue-100" }
+      ],
+      "demoLink": "https://github.com/wenbjo4",
+      "codeLink": "https://github.com/wenbjo4"
+    }
+  ]
+} 
