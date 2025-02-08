@@ -1,10 +1,21 @@
 'use client';
 import { useTranslation } from 'react-i18next';
 import ProjectCard from '../../components/ProjectCard';
+import { projectData } from '../../data/projects';
 
 export default function Projects() {
-  const { t } = useTranslation('project_page');
-  const projects = t('projects', { ns: 'project_card', returnObjects: true }) || [];
+  const { t } = useTranslation('project_page', 'project_card');
+
+  const mergedProjects = projectData.map((proj) => {
+    const translated = t(`projects.${proj.id}`, { returnObjects: true });
+    return {
+      ...proj,
+      title: translated.title,
+      description: translated.description,
+    };
+  });
+
+  const projects = mergedProjects;
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-8 py-12">

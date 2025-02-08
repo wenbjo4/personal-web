@@ -1,72 +1,30 @@
 {
   "viewDemo": "查看展示",
   "viewCode": "查看程式碼",
-  "projects": [
-    {
-      "image": "/images/project1.jpg",
+  "projects": {
+    "project1": {
       "title": "3D冒險遊戲",
-      "description": "使用Unity開發的3D冒險遊戲，具有動態戰鬥和解謎元素",
-      "tags": [
-        { "name": "Unity", "color": "text-purple-600", "bgColor": "bg-purple-100" },
-        { "name": "C#", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "使用Unity開發的3D冒險遊戲，具有動態戰鬥和解謎元素"
     },
-    {
-      "image": "/images/project2.jpg",
+    "project2": {
       "title": "任務管理系統",
-      "description": "一個具有即時更新功能的全端網頁應用程式，用於管理任務和專案",
-      "tags": [
-        { "name": "React", "color": "text-green-600", "bgColor": "bg-green-100" },
-        { "name": "Node.js", "color": "text-yellow-600", "bgColor": "bg-yellow-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "一個具有即時更新功能的全端網頁應用程式，用於管理任務和專案"
     },
-    {
-      "image": "/images/project3.jpg",
+    "project3": {
       "title": "健身追蹤應用",
-      "description": "一個跨平台的行動應用程式，用於追蹤運動和監控健身進度",
-      "tags": [
-        { "name": "Flutter", "color": "text-orange-600", "bgColor": "bg-orange-100" },
-        { "name": "Firebase", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "一個跨平台的行動應用程式，用於追蹤運動和監控健身進度"
     },
-    {
-      "image": "https://picsum.photos/400/400",
+    "project4": {
       "title": "圖像識別AI",
-      "description": "一個能夠高精度識別和分類圖像中物體的AI模型",
-      "tags": [
-        { "name": "Python", "color": "text-red-600", "bgColor": "bg-red-100" },
-        { "name": "TensorFlow", "color": "text-green-600", "bgColor": "bg-green-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "一個能夠高精度識別和分類圖像中物體的AI模型"
     },
-    {
-      "image": "https://picsum.photos/400/400",
+    "project5": {
       "title": "智慧家居系統",
-      "description": "基於物聯網的智慧家居系統，用於自動控制燈光、溫度和安全",
-      "tags": [
-        { "name": "C++", "color": "text-gray-600", "bgColor": "bg-gray-100" },
-        { "name": "Arduino", "color": "text-purple-600", "bgColor": "bg-purple-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "基於物聯網的智慧家居系統，用於自動控制燈光、溫度和安全"
     },
-    {
-      "image": "https://picsum.photos/400/400",
+    "project6": {
       "title": "2D平台遊戲",
-      "description": "一個基於瀏覽器的2D平台遊戲，具有多個關卡和能力提升",
-      "tags": [
-        { "name": "JavaScript", "color": "text-yellow-600", "bgColor": "bg-yellow-100" },
-        { "name": "Phaser.js", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "一個基於瀏覽器的2D平台遊戲，具有多個關卡和能力提升"
     }
-  ]
+  }
 } 

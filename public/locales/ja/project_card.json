@@ -1,72 +1,30 @@
 {
   "viewDemo": "デモを見る",
   "viewCode": "コードを見る",
-  "projects": [
-    {
-      "image": "/images/project1.jpg",
+  "projects": {
+    "project1": {
       "title": "3Dアドベンチャーゲーム",
-      "description": "Unityで開発した3Dアドベンチャーゲーム。ダイナミックな戦闘とパズル要素を特徴とします",
-      "tags": [
-        { "name": "Unity", "color": "text-purple-600", "bgColor": "bg-purple-100" },
-        { "name": "C#", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "Unityで開発した3Dアドベンチャーゲーム。ダイナミックな戦闘とパズル要素を特徴とします"
     },
-    {
-      "image": "/images/project2.jpg",
+    "project2": {
       "title": "タスク管理システム",
-      "description": "リアルタイム更新機能を備えたフルスタックWebアプリケーション。タスクとプロジェクトの管理に使用",
-      "tags": [
-        { "name": "React", "color": "text-green-600", "bgColor": "bg-green-100" },
-        { "name": "Node.js", "color": "text-yellow-600", "bgColor": "bg-yellow-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "リアルタイム更新機能を備えたフルスタックWebアプリケーション。タスクとプロジェクトの管理に使用"
     },
-    {
-      "image": "/images/project3.jpg",
+    "project3": {
       "title": "フィットネス追跡アプリ",
-      "description": "運動を追跡し、フィットネスの進捗を監視するためのクロスプラットフォームモバイルアプリ",
-      "tags": [
-        { "name": "Flutter", "color": "text-orange-600", "bgColor": "bg-orange-100" },
-        { "name": "Firebase", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "運動を追跡し、フィットネスの進捗を監視するためのクロスプラットフォームモバイルアプリ"
     },
-    {
-      "image": "https://picsum.photos/400/400",
+    "project4": {
       "title": "画像認識AI",
-      "description": "画像内のオブジェクトを高精度で認識・分類できるAIモデル",
-      "tags": [
-        { "name": "Python", "color": "text-red-600", "bgColor": "bg-red-100" },
-        { "name": "TensorFlow", "color": "text-green-600", "bgColor": "bg-green-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "画像内のオブジェクトを高精度で認識・分類できるAIモデル"
     },
-    {
-      "image": "https://picsum.photos/400/400",
+    "project5": {
       "title": "スマートホームシステム",
-      "description": "IoTベースのスマートホームシステム。照明、温度、セキュリティの自動制御が可能",
-      "tags": [
-        { "name": "C++", "color": "text-gray-600", "bgColor": "bg-gray-100" },
-        { "name": "Arduino", "color": "text-purple-600", "bgColor": "bg-purple-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "IoTベースのスマートホームシステム。照明、温度、セキュリティの自動制御が可能"
     },
-    {
-      "image": "https://picsum.photos/400/400",
+    "project6": {
       "title": "2Dプラットフォームゲーム",
-      "description": "ブラウザベースの2Dプラットフォームゲーム。複数のレベルとパワーアップ機能を搭載",
-      "tags": [
-        { "name": "JavaScript", "color": "text-yellow-600", "bgColor": "bg-yellow-100" },
-        { "name": "Phaser.js", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "ブラウザベースの2Dプラットフォームゲーム。複数のレベルとパワーアップ機能を搭載"
     }
-  ]
+  }
 }

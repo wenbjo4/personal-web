@@ -1,72 +1,30 @@
 {
   "viewDemo": "View Demo",
   "viewCode": "View Code",
-  "projects": [
-    {
-      "image": "/images/project1.jpg",
+  "projects": {
+    "project1": {
       "title": "3D Adventure Game",
-      "description": "A 3D adventure game built with Unity featuring dynamic combat and puzzle elements",
-      "tags": [
-        { "name": "Unity", "color": "text-purple-600", "bgColor": "bg-purple-100" },
-        { "name": "C#", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "A 3D adventure game built with Unity featuring dynamic combat and puzzle elements"
     },
-    {
-      "image": "/images/project2.jpg",
+    "project2": {
       "title": "Task Management System",
-      "description": "A full-stack web application for managing tasks and projects with real-time updates",
-      "tags": [
-        { "name": "React", "color": "text-green-600", "bgColor": "bg-green-100" },
-        { "name": "Node.js", "color": "text-yellow-600", "bgColor": "bg-yellow-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "A full-stack web application for managing tasks and projects with real-time updates"
     },
-    {
-      "image": "/images/project3.jpg",
+    "project3": {
       "title": "Fitness Tracker App",
-      "description": "A cross-platform mobile app for tracking workouts and monitoring fitness progress",
-      "tags": [
-        { "name": "Flutter", "color": "text-orange-600", "bgColor": "bg-orange-100" },
-        { "name": "Firebase", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "A cross-platform mobile app for tracking workouts and monitoring fitness progress"
     },
-    {
-      "image": "https://picsum.photos/400/400",
+    "project4": {
       "title": "Image Recognition AI",
-      "description": "An AI model that can recognize and classify objects in images with high accuracy",
-      "tags": [
-        { "name": "Python", "color": "text-red-600", "bgColor": "bg-red-100" },
-        { "name": "TensorFlow", "color": "text-green-600", "bgColor": "bg-green-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "An AI model that can recognize and classify objects in images with high accuracy"
     },
-    {
-      "image": "https://picsum.photos/400/400",
+    "project5": {
       "title": "Smart Home System",
-      "description": "An IoT-based smart home system for automated control of lights, temperature, and security",
-      "tags": [
-        { "name": "C++", "color": "text-gray-600", "bgColor": "bg-gray-100" },
-        { "name": "Arduino", "color": "text-purple-600", "bgColor": "bg-purple-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "An IoT-based smart home system for automated control of lights, temperature, and security"
     },
-    {
-      "image": "https://picsum.photos/400/400",
+    "project6": {
       "title": "2D Platform Game",
-      "description": "A browser-based 2D platform game with multiple levels and power-ups",
-      "tags": [
-        { "name": "JavaScript", "color": "text-yellow-600", "bgColor": "bg-yellow-100" },
-        { "name": "Phaser.js", "color": "text-blue-600", "bgColor": "bg-blue-100" }
-      ],
-      "demoLink": "#",
-      "codeLink": "#"
+      "description": "A browser-based 2D platform game with multiple levels and power-ups"
     }
-  ]
+  }
 } 

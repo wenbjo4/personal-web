@@ -42,10 +42,7 @@ i18n
         project_page: enProjectPage,
       },
     },
-    // 預設語系
-    fallbackLng: 'zh',
     ns: ['home', 'nav', 'project_card', 'project_page'],
-    defaultNS: 'home',
     interpolation: {
       escapeValue: false,
     },

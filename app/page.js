@@ -1,47 +1,37 @@
 'use client';
+
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
+import { projectData } from '../data/projects.js';
+
 
 export default function Home() {
-  const { t } = useTranslation(['home', 'project_card']);
+  const { t } = useTranslation('home', 'project_card');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  const projects = t('projects', { ns: 'project_card', returnObjects: true }) || [];
+
+  const mergedProjects = projectData.map((proj) => {
+    const translated = t(`projects.${proj.id}`, { returnObjects: true });
+    return {
+      ...proj,
+      title: translated.title,
+      description: translated.description,
+    };
+  });
 
   const projectsPerPage = 3;
+  const projects = mergedProjects;
   const getVisibleIndices = () => Array.from({ length: projectsPerPage }, (_, i) => (currentIndex + i) % projects.length);
   const getVisibleProjects = () => getVisibleIndices().map(index => projects[index]);
   const visibleProjects = getVisibleProjects();
 
-  useEffect(() => {
-    console.log(getVisibleIndices());
-  }, [getVisibleIndices]);
-
   const nextProjects = () => {
-    if (isTransitioning) return;
-
-    setIsTransitioning(true);
-    setCurrentIndex((prevIndex) => 
-      (prevIndex + 1) % projects.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
   };
 
   const prevProjects = () => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setCurrentIndex((prevIndex) => 
-      (prevIndex - 1 + projects.length) % projects.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
   };
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsTransitioning(false);
-    }, 300);
-
-    return () => clearTimeout(timer);
-  }, [currentIndex]);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-8">
@@ -86,9 +76,9 @@ export default function Home() {
         <div className="relative min-h-[400px] py-8">
           <button 
             onClick={prevProjects}
-            disabled={isTransitioning || projects.length <= projectsPerPage}
+            disabled={projects.length <= projectsPerPage}
             className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-gray-900 text-white p-2 rounded-full transition-colors z-10
-              ${isTransitioning || projects.length <= projectsPerPage ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-700'}`}
+              ${projects.length <= projectsPerPage ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-700'}`}
             aria-label="Previous project"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -99,11 +89,7 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-6 w-full">
             {visibleProjects.length > 0 ? (
               visibleProjects.map((project, index) => (
-                <div 
-                  key={`${currentIndex}-${index}`}
-                  className={`transform transition-all duration-300
-                    ${isTransitioning ? 'scale-95 opacity-80' : 'scale-100 opacity-100'}`}
-                >
+                <div key={`${currentIndex}-${index}`}>
                   <ProjectCard project={project} />
                 </div>
               ))
@@ -116,9 +102,9 @@ export default function Home() {
 
           <button 
             onClick={nextProjects}
-            disabled={isTransitioning || projects.length <= projectsPerPage}
+            disabled={projects.length <= projectsPerPage}
             className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-gray-900 text-white p-2 rounded-full transition-colors z-10
-              ${isTransitioning || projects.length <= projectsPerPage ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-700'}`}
+              ${projects.length <= projectsPerPage ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-700'}`}
             aria-label="Next project"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -133,17 +119,13 @@ export default function Home() {
               <button
                 key={index}
                 onClick={() => {
-                  if (!isTransitioning) {
-                    setIsTransitioning(true);
-                    setCurrentIndex(index);
-                  }
+                  setCurrentIndex(index);
                 }}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   getVisibleIndices().includes(index)
                     ? 'bg-blue-500 hover:bg-blue-400'
                     : 'bg-gray-300 hover:bg-gray-400'
                 }`}
-
                 aria-label={`Go to project ${index + 1}`}
               />
             ))}
