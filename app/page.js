@@ -7,11 +7,12 @@ import { projectData } from '../data/projects.js';
 
 
 export default function Home() {
-  const { t } = useTranslation('home', 'project_card');
+  const { t: homeT } = useTranslation('home');
+  const { t: projectT } = useTranslation('project_card');
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const mergedProjects = projectData.map((proj) => {
-    const translated = t(`projects.${proj.id}`, { returnObjects: true });
+    const translated = projectT(`projects.${proj.id}`, { returnObjects: true });
     return {
       ...proj,
       title: translated.title,
@@ -47,19 +48,19 @@ export default function Home() {
               />
             </div>
             <div className="flex-grow">
-              <h1 className="text-4xl font-bold mb-2">{t('title')}</h1>
-              <p className="text-xl mb-4">{t('role')}</p>
+              <h1 className="text-4xl font-bold mb-2">{homeT('title')}</h1>
+              <p className="text-xl mb-4">{homeT('role')}</p>
               
               <div className="mb-4">
-                <h2 className="text-2xl font-semibold mb-2">{t('education.title')}</h2>
+                <h2 className="text-2xl font-semibold mb-2">{homeT('education.title')}</h2>
                 <ul className="space-y-2">
-                  <li>{t('education.university')}</li>
-                  <li>{t('education.highSchool')}</li>
+                  <li>{homeT('education.university')}</li>
+                  <li>{homeT('education.highSchool')}</li>
                 </ul>
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mb-2">{t('skills.title')}</h2>
+                <h2 className="text-2xl font-semibold mb-2">{homeT('skills.title')}</h2>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-blue-100 text-blue-600 rounded">C</span>
                   <span className="px-3 py-1 bg-green-100 text-green-600 rounded">C++</span>
