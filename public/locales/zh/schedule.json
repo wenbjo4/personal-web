@@ -1,9 +1,12 @@
 {
     "pageTitle": "行程表",
+    "noSchedule": "目前沒有任何行程。",
+    "loading": "載入中...",
     "tableHeader": {
-        "date": "日期",
-        "title": "行程名稱",
-        "location": "地點"
-    },
-    "noSchedule": "目前沒有任何行程。"
-}
+      "date": "日期",
+      "title": "行程名稱",
+      "location": "地點",
+      "startTime": "開始時間",
+      "endTime": "結束時間"
+    }
+  }

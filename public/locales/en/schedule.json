@@ -1,9 +1,12 @@
 {
   "pageTitle": "Schedule",
+  "noSchedule": "No schedule at the moment.",
+  "loading": "Loading...",
   "tableHeader": {
     "date": "Date",
-    "title": "Schedule Title",
-    "location": "Location"
-  },
-  "noSchedule": "No schedules at the moment."
-} 
+    "title": "Title",
+    "location": "Location",
+    "startTime": "Start Time",
+    "endTime": "End Time"
+  }
+}

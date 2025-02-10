@@ -40,12 +40,13 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="relative w-48 h-48 overflow-hidden flex-shrink-0">
-              <img
-                src="https://picsum.photos/400/400"
-                alt="Profile Picture"
-                style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                className="object-cover"
-              />
+              <div className="border-4 border-black bg-white w-full h-full flex items-center justify-center">
+                <img
+                  src="/images/profile.png"
+                  alt="Profile Picture"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
             <div className="flex-grow">
               <h1 className="text-4xl font-bold mb-2">{homeT('title')}</h1>

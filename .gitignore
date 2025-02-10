@@ -36,11 +36,16 @@ yarn-error.log*
 # vercel
 .vercel
 
+# vscode
+.vscode
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
 
 # 忽略 Project Structure 相關的 PowerShell 腳本與文本檔案
 update_structure.bat
-_project_structure/generate_structure.ps1
-_project_structure/structure.txt
+/_project_structure/
+
+# 忽略 MongoDB Playground 相關的檔案
+/mongodb_playground/
