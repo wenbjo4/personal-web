@@ -135,7 +135,7 @@ export default function Home() {
       </section>
 
       <a
-        href="https://github.com"
+        href="https://github.com/wenbjo4"
         target="_blank"
         rel="noopener noreferrer"
         className="px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors flex items-center gap-2"

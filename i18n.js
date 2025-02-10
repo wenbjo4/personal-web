@@ -14,9 +14,15 @@ import jaNav from './public/locales/ja/nav.json';
 import enProjectCard from './public/locales/en/project_card.json';
 import zhProjectCard from './public/locales/zh/project_card.json';
 import jaProjectCard from './public/locales/ja/project_card.json';
-import enProjectPage from './public/locales/en/project_page.json';
-import zhProjectPage from './public/locales/zh/project_page.json';
-import jaProjectPage from './public/locales/ja/project_page.json';
+import enProjects from './public/locales/en/projects.json';
+import zhProjects from './public/locales/zh/projects.json';
+import jaProjects from './public/locales/ja/projects.json';
+import enSchedule from './public/locales/en/schedule.json';
+import zhSchedule from './public/locales/zh/schedule.json';
+import jaSchedule from './public/locales/ja/schedule.json';
+import enFooter from './public/locales/en/footer.json';
+import zhFooter from './public/locales/zh/footer.json';
+import jaFooter from './public/locales/ja/footer.json';
 
 i18n
   .use(initReactI18next)
@@ -27,22 +33,28 @@ i18n
         home: zhHome,
         nav: zhNav,
         project_card: zhProjectCard,
-        project_page: zhProjectPage,
+        projects: zhProjects,
+        schedule: zhSchedule,
+        footer: zhFooter
       },
       ja: {
         home: jaHome,
         nav: jaNav,
         project_card: jaProjectCard,
-        project_page: jaProjectPage,
+        projects: jaProjects,
+        schedule: jaSchedule,
+        footer: jaFooter
       },
       en: {
         home: enHome,
         nav: enNav,
         project_card: enProjectCard,
-        project_page: enProjectPage,
+        projects: enProjects,
+        schedule: enSchedule,
+        footer: enFooter
       },
     },
-    ns: ['home', 'nav', 'project_card', 'project_page'],
+    ns: ['home', 'nav', 'project_card', 'projects', 'schedule', 'footer'],
     interpolation: {
       escapeValue: false,
     },

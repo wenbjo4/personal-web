@@ -1,0 +1,9 @@
+{
+  "pageTitle": "Schedule",
+  "tableHeader": {
+    "date": "Date",
+    "title": "Schedule Title",
+    "location": "Location"
+  },
+  "noSchedule": "No schedules at the moment."
+} 

@@ -37,14 +37,27 @@ function LanguageSwitcher() {
 }
 
 export default function Navigation() {
-  const { t } = useTranslation('nav');
+  const { t } = useTranslation();
   const pathname = usePathname();
 
   const navLinks = [
-    { href: '/', label: t('home') },
-    { href: '/project_page', label: t('project_page') },
-    { href: '/contact', label: t('contact') }
+    { href: '/', label: t('home:pageTitle') },
+    { href: '/projects', label: t('projects:pageTitle') },
+    { href: '/schedule', label: t('schedule:pageTitle') },
+    { href: '#', label: t('footer:title'), onClick: (e) => {
+      e.preventDefault();
+      scrollToFooter();
+      }
+    }
   ];
+
+
+  const scrollToFooter = () => {
+    const footer = document.getElementById('footer');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <nav className="bg-gray-900 text-white fixed top-0 left-0 right-0 z-[123] shadow-lg">
@@ -53,16 +66,17 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0 mr-auto">
             <Link href="/" className="text-xl font-bold">
-              {t('logo')}
+              {t('nav:logo')}
             </Link>
           </div>
 
           {/* Navigation Links */}
           <div className="flex items-center gap-6">
-            {navLinks.map(({ href, label }) => (
+            {navLinks.map(({ href, label, onClick }) => (
               <Link 
                 key={href}
                 href={href}
+                onClick={onClick}
                 className={`hover:text-blue-400 transition-colors ${
                   pathname === href ? 'text-blue-400' : ''
                 }`}

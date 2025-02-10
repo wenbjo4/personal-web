@@ -1,0 +1,9 @@
+{
+    "pageTitle": "行程表",
+    "tableHeader": {
+        "date": "日期",
+        "title": "行程名稱",
+        "location": "地點"
+    },
+    "noSchedule": "目前沒有任何行程。"
+}

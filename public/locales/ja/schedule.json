@@ -1,0 +1,9 @@
+{
+  "pageTitle": "スケジュール",
+  "tableHeader": {
+    "date": "日付",
+    "title": "スケジュール名",
+    "location": "場所"
+  },
+  "noSchedule": "現在、スケジュールはありません。"
+} 
